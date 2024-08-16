@@ -4,6 +4,13 @@ h1 {
 }
 
 .robots {
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+}
+
+.android {
+    padding: 20px;
 }
 
 .head, 
@@ -19,14 +26,34 @@ h1 {
 	width: 200px; 
 	margin: 0 auto; 
 	height: 150px; 
-	border-radius: 200px 200px 0 0; 
+	border-radius: 100px 100px 0 0; 
 	margin-bottom: 10px;
 } 
 
-
 .eyes {
-	
+	display: flex;
+	margin-top: 20px;
 }
+
+.left_eye, .right_eye { 
+	width: 20px; 
+	height: 20px; 
+	border-radius: 50%; 
+	background-color: white; 
+} 
+
+.left_eye { 
+	position: relative; 
+	top: 100px; 
+	left: 40px; 
+} 
+
+.right_eye { 
+	position: relative; 
+	top: 100px; 
+	left: 120px; 
+}
+
 
 .head:hover {
 	width: 300px;
@@ -34,23 +61,34 @@ h1 {
 }
 
 .upper_body { 
-	width: 300px; 
-	height: 150px;
-	display: flex; 
+	width: 320px; 
+	height: 150px; 
+	margin: 5px 2px 100px 10px ;
+	display: flex;
+	justify-content: space-between;
 } 
 
 .left_arm, .right_arm { 
 	width: 40px; 
 	height: 125px;
 	border-radius: 100px; 
+	display: flex;
 } 
 
 .left_arm { 
-	margin-right: 10px; 
+	width: 40px; 
+	height: 125px;
+	border-radius: 100px;
+	margin: 10px;
+	margin-left: 0px;
 } 
 
 .right_arm { 
-	margin-left: 10px; 
+	width: 40px; 
+	height: 125px;
+	border-radius: 100px;
+	margin: 10px;
+
 } 
 
 .torso { 
@@ -62,8 +100,9 @@ h1 {
 .lower_body { 
 	width: 200px; 
 	height: 200px;
-	/* This is another useful property. Hmm what do you think it does?*/
 	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
 
 } 
 
@@ -71,10 +110,8 @@ h1 {
 	width: 40px; 
 	height: 120px;
 	border-radius: 0 0 100px 100px; 
-} 
+	margin: -70px auto;
 
-.left_leg { 
-	margin-left: 45px; 
 } 
 
 .left_leg:hover {
@@ -85,30 +122,6 @@ h1 {
     transform: rotate(20deg);
 }
 
-.right_leg { 
-	margin-left: 30px; 
-}
-
-.left_eye, .right_eye { 
-	width: 20px; 
-	height: 20px; 
-	border-radius: 15px; 
-	background-color: white;  
-} 
-
-.left_eye { 
-	/* These properties are new and you haven't encountered
-	in this course. Check out CSS Tricks to see what it does! */
-	position: relative; 
-	top: 100px; 
-	left: 40px; 
-} 
-
-.right_eye { 
-	position: relative; 
-	top: 100px; 
-	left: 120px; 
-}
 
 
 
